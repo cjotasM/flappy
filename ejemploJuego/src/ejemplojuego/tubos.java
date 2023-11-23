@@ -27,9 +27,9 @@ public class tubos {
     
     public void mover(){
         if (x_inicial<=-100) {
-            jueguito.puntos++;
+            jueguito.punticos++;
             x_inicial=1300;
-            if (jueguito.puntos==10 | jueguito.puntos==20 | jueguito.puntos==30) {
+            if (jueguito.punticos==10 | jueguito.punticos==20 | jueguito.punticos==30) {
                 x_auxiliar+=-2;
                 jueguito.nivel++;
             }
@@ -53,9 +53,9 @@ public class tubos {
     }
     
     public Area getBounds(){
-        Rectangle forma1=new Rectangle (x_inicial,y_inicial,65,65);
+        Rectangle forma1=new Rectangle (x_inicial,y_inicial,55,55);
         lado1=new Area(forma1);
-        Rectangle forma2= new Rectangle (x_inicial,y_inicial,65,65);
+        Rectangle forma2= new Rectangle (x_inicial,y_inicial,55,55);
         mitad=new Area (forma2);
         
         lapiz=lado1;

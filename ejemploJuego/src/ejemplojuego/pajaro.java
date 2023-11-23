@@ -76,11 +76,11 @@ public class pajaro {
     }
     
     public Area getBounds(){
-        Rectangle forma1=new Rectangle (x_inicial,y_inicial,95,62);
+        Rectangle forma1=new Rectangle (x_inicial,y_inicial,90,50);
         cuerpo=new Area(forma1);
-        Ellipse2D forma2= new Ellipse2D.Double (x_inicial,y_inicial+28,48,48);
+        Ellipse2D forma2= new Ellipse2D.Double (x_inicial,y_inicial+28,45,45);
         capa=new Area (forma2);
-        Ellipse2D forma3= new Ellipse2D.Double (x_inicial+73,y_inicial+39,35,35);
+        Ellipse2D forma3= new Ellipse2D.Double (x_inicial+73,y_inicial+39,25,25);
         cabeza=new Area (forma3);
         matacho=cuerpo;
         matacho.add(capa);

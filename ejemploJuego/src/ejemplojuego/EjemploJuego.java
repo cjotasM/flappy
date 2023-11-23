@@ -49,7 +49,7 @@ public class EjemploJuego {
    public static void reiniciaValores(){
        juego.juegoFinalizado=false;
        tubos.x_auxiliar=-4;
-       juego.puntos=0;
+       juego.punticos=0;
        juego.nivel=1;
        juego.vidas=3;
        reiniciaJuego=-1;

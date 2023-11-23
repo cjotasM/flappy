@@ -18,13 +18,15 @@ public class juego extends JPanel{
     pajaro matacho=new pajaro(this);
     tubos lapices=new tubos(this);
     fondo matrix=new fondo(this);
+    puntos laptos=new puntos(this);
+    profesora profe=new profesora(this);
     
     
     
     public static boolean juegoFinalizado=false;
     public static boolean pierdeVida=false;
     public static int vidas=3;
-    public static int puntos=0;
+    public static int punticos=0;
     public static int nivel=1;
     private boolean isFondoPlaying = false;
     
@@ -151,7 +153,8 @@ public class juego extends JPanel{
         matrix.paint(g);
         matacho.paint(g);
         lapices.paint(g);
-        
+        laptos.paint(g);
+        profe.paint(g);
        
         mover();
     }
@@ -160,13 +163,13 @@ public class juego extends JPanel{
         Graphics2D g1=g, g2=g;
         Font score=new Font("Arial",Font.BOLD,30);
         g.setFont(score);
-        g.setColor(Color.blue);
-        g1.drawString("Puntaje: "+puntos,1100,30);
-        g1.drawString("Vidas: "+vidas,20,30);
-        g1.drawString("Nivel: "+nivel,570,30);
+        g.setColor(Color.blue);        
+        g1.drawString("Vidas: "+vidas,20,70);
+        g1.drawString("Nivel: "+nivel,570,70);
         if (juegoFinalizado) {
             g2.setColor(Color.red);
-            g2.drawString("¡Has Reprobado!",((float)getBounds().getCenterX()/2)+170,70);            
+            g2.drawString("¡Has Reprobado!",((float)getBounds().getCenterX()/2)+170,100); 
+            
         }
         
     }
